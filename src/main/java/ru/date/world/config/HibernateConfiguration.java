@@ -8,6 +8,8 @@ package ru.date.world.config;
 /**
  *
  * @author polina
+ *
+ * TODO: Поставить на бук Postgresql
  */
 
 import java.util.Properties;
