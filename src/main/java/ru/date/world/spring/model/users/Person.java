@@ -3,6 +3,8 @@ package ru.date.world.spring.model.users;
 import org.hibernate.annotations.Type;
 import org.joda.time.LocalDate;
 import org.springframework.format.annotation.DateTimeFormat;
+import ru.date.world.spring.model.types.City;
+import ru.date.world.spring.model.types.Country;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
@@ -17,11 +19,9 @@ public class Person extends User {
     @Type(type = "org.jadira.usertype.dateandtime.joda.PersistentLocalDate")
     private LocalDate birthDate;
 
-    @Column(name = "country_id")
-    private int country_id;
+    private Country country_id;
 
-    @Column(name = "city_id")
-    private int city_id;
+    private City city_id;
 
     private enum gender {Male, Female};
 

@@ -14,6 +14,10 @@
         <!-- Сохранять результаты выполнения запросов -->
         <!-- <property name="connection.autocommit">true</property>-->
         <mapping class="ru.date.world.spring.model.Employee"/>
+        <mapping class="ru.date.world.spring.model.users.Person"/>
+        <mapping class="ru.date.world.spring.model.users.Admin"/>
+        <mapping class="ru.date.world.spring.model.users.User"/>
+        <mapping class="ru.date.world.spring.model.users.Moderator"/>
 
     </session-factory>
 </hibernate-configuration>

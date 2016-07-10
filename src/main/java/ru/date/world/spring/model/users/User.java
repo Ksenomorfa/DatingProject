@@ -48,5 +48,4 @@ public class User {
     @Column(name = "language_id")
     private int language_id;
 
-
 }
